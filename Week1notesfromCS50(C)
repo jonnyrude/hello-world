@@ -1,10 +1,10 @@
 
-
+#include <stdio.h>
 int main(void)
 {
   printf("hello, world!"\n)
 {
-**LOOPS****
+**LOOPS***********************************LOOPS*************************
 ****FOREVER LOOP****
 while (true)
 {
@@ -17,3 +17,29 @@ for (int i = 0; i < 10: i++)
 	printf("hello, world!"\n)
 {
 
+**VARIABLES*****************************************VARIABLEs***************
+
+int coutner = 0;
+while (true)
+{
+	printf ("%d\n", counter);
+	counter++;
+{
+
+**Conditions************************************************Conditions*****
+**example**
+	(x < y)
+	((x , y) && (y < z))
+**example** 
+	if (x < y)
+	{
+	printf ("x is less than y\n");
+	{
+	else if (x > y)
+	{
+	printf ("x is greater than y\n");
+	{
+	else
+	{
+	printf ("x is equal to y\n")
+	{
