@@ -43,3 +43,14 @@ while (true)
 	{
 	printf ("x is equal to y\n")
 	{
+***************************************************************************************
+********************************CODE EXAMPLES******************************************
+INTRO - VARIABLE
+
+#incldue <stdio.h>
+
+int main (void)
+{
+	string s = "David";
+	printf("hello, David\n");
+}
