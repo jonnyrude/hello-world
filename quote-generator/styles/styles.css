@@ -1,18 +1,10 @@
-a {
-  color: white;
-  font-weight: bold;
+html {background-color: black;
 }
 
-#link1 {
-  font-size: 35;
-  color
-}
+.quote-box{
+    background-color: white;
+    align-content: center;
+    text-align: center;
 
-.blue-p {
-  color:blue;
-  font-family: 'Courier New';
-}
 
-html {
-  background-color: grey;
 }
