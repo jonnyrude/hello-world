@@ -1,29 +1,26 @@
 $(document).ready(function(){
 
-    //Basic selectors
-    $('div[class="quote-box"]').css('padding', '100px 100px 100px 100px');
-
-
      function getQuote(){
 
 
         $.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=", function(a) {
-            $(".quote-box").append(a[0].content + "<p>— " + a[0].title + "</p>")
+            $("#quote").html(a[0].content + "<br />— " + a[0].title)
+
+            cache: false;
         });
-
-        //$('p:first').replaceWith(quote)
-
-        // animation
-        $('div[class="quote-box"]').hide(1000).show(800);
 
     };
 
     getQuote();
 
 
-    $("button").on('click', function(){
-        getQuote;
+    $("#quoteButton").on('click', function(){
+        $('#quote').fadeOut(300);
+        getQuote();
+        $('#quote').fadeIn(900);
     });
+
+
 
 
     //basic animations
