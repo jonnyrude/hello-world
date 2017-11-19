@@ -1,5 +1,5 @@
 a {
-  color: red;
+  color: white;
   font-weight: bold;
 }
 
@@ -9,10 +9,10 @@ a {
 }
 
 .blue-p {
-  color:red;
+  color:blue;
   font-family: 'Courier New';
 }
 
 html {
-  background-color: blue;
+  background-color: grey;
 }

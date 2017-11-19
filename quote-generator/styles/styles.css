@@ -1,0 +1,32 @@
+html {
+    background-color: black;
+}
+
+.center-block {
+
+    float: none;
+}
+
+
+.quote-box{
+    background-color: white;
+    align-content: center;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.margin {
+    padding: 80px;
+}
+
+.container-fluid {
+    background-color: black;
+}
+
+.row {
+    background-color:black;
+}
