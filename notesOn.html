@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <!-- This is a comment - not read as code -->
+
+    <!-- First doctype element above is used since HTML5, much shorter than previous, to specify file type -->
+<html lang="en-us">
+    <!-- All content goes inside html tag
+      - lang="en-US" specifies language, useful for accessibility, screen readers, etc. -->
+
+    <head>
+        <!-- HTML documents have just 2 parts - head and body
+            - metat-data goes here, including:
+               (NO JAVASCRIPT, or links to it, though you may see it sometimes) -->
+
+        <!-- charset - specifies the characters to be used (latin, chinese, etc.) -->
+        <meta charset="utf-8">
+
+        <!-- Author info -->
+        <meta name="author" content="Jon Rude">
+
+        <!-- Descriptions are often used by search engines - it's the text that is displayed among search results -->
+        <meta name="description" content="This file contains purley notes on HTML for educational purposes.">
+
+        <!-- Tells mobile devices to provide their true device width -->
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Link in CSS style-sheets -- href should be a local reference, i.e. styles/style.css -->
+        <link rel="stylesheet" href="#" type="text/css" />
+
+    </head>
+
+    <body>
+
+    <img src="#" alt="Descriptive text, for users that cannot see the image">
+    <!-- No closing tag
+          alt text and file names for images are used by search engines,
+          alt="" - leave blank for decorative images, b/c it is read by screen readers and annoying
+          CSS  background-image: url("#")  should be used for decorative images, since they have no semantic meaning
+          alt text should briefly convey any info conained in the image
+          alt text can be link text, if not in the link title= attribute
+          images shouldn't be text-only (like headers, titles with shadows, etc.) unless unavoidable
+          width= & height= attributes OK - leaves space for image during loading or if unable to load
+          title= attribut OK, but not necc - displays only when mouse hovers - useful when captions aren't an option
+          SVG file - (vector graphic) has no inherent aspect ratio, so def use width & height attributes-->
+
+    <figure>
+        <img src="#">
+        <figcaption>#caption</figcaption>
+        <!-- figcaption describes the content in the figure; image, video, audio, code snippet, table, etc.
+            captions are for all, alt= text is for those who cannot see the figure-->
+    </figure>
+
+    <iframe src="#" with="" height="" sandbox></iframe>
+        <!-- This is what is used to insert YouTube videos and other "documents" into your site
+            SOURCE - set the source with Javascript, so the video LOADS LAST, since that can slow the overal loading of the page
+        ALWAYS USE sandbox attribute - prevents the iframe code from effecting any other code on the page - for sercurity in modern browsers
+            Do not use to embed in anything http - only the secure httpS -->
+
+    <a href="#" title="supplementary information about the link, displayed when mouse hovers over link"></a>
+    <!-- title= attribute can contain infromation about what that page contains, or things user should be aware of (such as downloads, file types)-->
+    <!-- download= attribute provides the default file name - i.e.  download="filename.pdf" -->
+    <!-- EMAIL links - use the "mailto:" in the href, with or without email address (as in 'Share' button)
+        - href="mailto:example@fake.com" - will open an email addressed to example@fake.com in the computer's default email program-->
+            <a href="mailto:nowhere@mozilla.org?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&amp;subject=The%20subject%20of%20the%20email &amp;body=The%20body%20of%20the%20email">
+          Send mail with cc, bcc, subject and body </a> <!-- fields are URL encoded -->
+
+<!-- QUOTE ; blockquote or inline quote <q> -->
+    <blockquote cite="#"></blockquote>
+        <!-- seperates the text out. Can use paragraphs, etc., inside -->
+    <q cite="#"> </q>
+        <!-- inline, already a paragraph, etc. -->
+
+    <cite></cite>
+        <!-- contains the name of the cited work (book, writer, etc.), more useful than the cite= attribute,
+            can include link within-->
+
+    <abbr title="Spell Out Full Abbreviation or Acronym"></abbr>
+
+
+<!-- Address- CONTACT of AUTHOR of the HTML Document only -->
+    <address>
+        <p>Page written by Jon Rude</p>
+    </address>
+<!-- Superscript (up) and Subscript (down)-->
+    27<sup>th</sup>
+    H<sub>2</sub>O
+
+<!-- DATE & TIME - machine readible (easier for calendar apps to grab)-->
+    <time datetime="2016-01-20">20 January 2016</time>
+        <time datetime="2016-01">January 2016</time>
+        <!-- Just month and day -->
+        <time datetime="01-20">20 January</time>
+        <!-- Just time, hours and minutes -->
+        <time datetime="19:30">19:30</time>
+        <!-- You can do seconds and milliseconds too! -->
+        <time datetime="19:30:01.856">19:30:01.856</time>
+        <!-- Date and time -->
+        <time datetime="2016-01-20T19:30">7.30pm, 20 January 2016</time>
+
+
+    </body>
+
+</html>
