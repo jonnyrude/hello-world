@@ -2,31 +2,35 @@ html {
     background-color: black;
 }
 
-.center-block {
-
-    float: none;
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
-
 .quote-box{
+
+    margin: 0 auto;
+    margin-top: 12%;
+
+    min-width: 300px;
+    max-width: 40%;
+
+    min-height: 50px;
+    max-height: auto;
+
     background-color: white;
-    align-content: center;
-    text-align: center;
+
     padding: 20px 20px 20px 20px;
+
+    border-radius: 1.5em;
 }
 
 p {
+    text-align: center;
     font-size: 20px;
 }
 
-.margin {
-    padding: 80px;
-}
-
-.container-fluid {
-    background-color: black;
-}
-
-.row {
-    background-color:black;
+.btn {
+  float: right;
 }
