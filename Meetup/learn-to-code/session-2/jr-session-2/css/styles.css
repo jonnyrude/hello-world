@@ -1,0 +1,185 @@
+@import url(http://fonts.googleapis.com/css?family=Open%20Sans:300,400,500,600,700);
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    font-family: "Open Sans";
+    padding: 40px;
+    margin: 0px;
+}
+
+#header h1 {
+    float: left;
+}
+#header nav {
+    float: right;
+    margin-top: 15px;
+}
+#header li {
+    list-style-type: none;
+    float: left;
+}
+#header li a {
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+    margin-left: 50px;
+    font-weight: 300;
+    transition: color .5s;
+}
+#header li a:hover {
+    color: lightgray;
+}
+
+.big-section {
+    margin-top: 50px;
+    height: 450px;
+    width: 100%;
+}
+
+#slider {
+    background-image: url(../images/slid1.jpg);
+    background-size: cover;
+    text-align: center;
+    display: table;
+}
+#slider h1 {
+    letter-spacing: 3px;
+    color: black;
+}
+#slider span {
+    vertical-align: middle;
+    display: table-cell;
+    color: gray;
+}
+
+#about {
+    border: solid 1px black;
+    background-image: url(../images/slid1.jpg);
+    background-size: cover;
+    height: 450px;
+}
+
+#about:hover div {
+    opacity: .9;
+}
+
+#about:hover span {
+    opacity: 1;
+}
+
+#about-overlay {
+    width: 100%;
+    height: 450px;
+    background-color: darkslategray;
+    position: absolute;
+    opacity: 0;
+    transition: opacity .5s;
+}
+#about span {
+    position: absolute;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+#portfolio {
+    background-color: rgb(210, 210, 210);
+    height: 450px;
+    padding-top: 25px;
+    padding-left: 30px;
+    display: block;
+}
+
+#portfolio span {
+    padding-right: 7px;
+    float: left;
+    height: 100%;
+
+}
+
+.we-are {
+    width: 50%;
+    float: right
+}
+
+.brand-exp, .medi-exp {
+    width: 25%;
+    float: right;
+}
+
+#portfolio li {
+   list-style-type: none;
+    margin: 0;
+}
+
+#portfolio h2 {
+    font-family: "Open Sans";
+    font-weight: 1;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+#portfolio p, #portfolio li {
+    color: rgb(162, 162, 162);
+    font-size: 14px;
+    line-height: 2;
+    font-weight: 1;
+}
+
+.display {
+
+    width: 600px;
+    height: 600px;
+    margin: 4px;
+}
+
+.disp-text {
+    background-color: lightgray;
+    opacity: 0;
+    transition: opacity .5s;
+    width: 600px;
+    height: 600px;
+}
+
+.disp-text:hover {
+    opacity: .9;
+}
+
+.disp-text span {
+    opacity: 0;
+    transition: opacity .5s;
+    color: black;
+    font-size: 25px;
+}
+
+.disp-text:hover span {
+    opacity: 1;
+}
+
+#disp1 {
+    background-image: url("../images/work-1.jpg");
+}
+
+#disp2 {
+    background-image: url("../images/work-2.jpg");
+}
+
+#disp3 {
+    background-image: url("../images/work-3.jpg");
+}
+
+#disp4 {
+    background-image: url("../images/work-4.jpg");
+}
+
+#disp5 {
+    background-image: url("../images/work-5.jpg");
+}
+
+#disp6 {
+    background-image: url("../images/work-6.jpg");
+}
