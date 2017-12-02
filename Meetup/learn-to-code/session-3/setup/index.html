@@ -1,8 +1,79 @@
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta lang="en-US">
+
         <title>Session 3: Javascript Fundamentals</title>
+        <script>
+          function addSpan() {
+            var container = document.getElementById('container');
+            //create a span element
+            var span = document.createElement('span');
+            span.innerText= 'Span text from Javascript';
+            //span.className = 'error';
+            container.appendChild(span);
+
+          }
+        </script>
     </head>
     <body>
-        
+
+    <h1>Hello!</h1>
+
+    <div id='container'> </div>
+
+
+<button onclick='addSpan'>ADD A SPAN!</button>
+
+    <script>
+
+      // string = 'asdf'
+      //number = 1 or 1.23
+      //
+      // var name = 'Jon';
+
+      // objects
+      //prototype is building block of all objects
+      //can be manipulated or create your own, like diff animals in a zoo
+//
+//       var person = {
+//         name: 'Jon',
+//         age: 31,
+//         pets: [
+//           {
+//             type: 'dog',
+//             name: 'Bruno'
+//           },
+//           {
+//             type: 'cat',
+//             name: 'Sargent'
+//           }
+//         ],
+//
+//         sayHi: function () {
+//           console.log('Hi, my name is ' + name)
+//         }
+// // debugger - special term - places a breakpoint in the code for the browser (chrome of firefox)
+//       };
+//
+//     person.sayHi();
+//
+//       // Array, can contain a mix of anything, numbs, strings, ojects, functions...
+//       // var numbers = [
+//       //   44, 2, 3
+//       // ];
+//
+//
+//       //functions
+//
+//       function multiply(x, y) {
+//         console.log(x * y);
+//       }
+//
+//       multiply(4, 5);
+//       //console.log(person)
+    </script>
+    <script src='script.js'></script>
     </body>
+
 </html>
