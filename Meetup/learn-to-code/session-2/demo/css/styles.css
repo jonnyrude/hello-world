@@ -1,0 +1,196 @@
+/* This import gives us the ability to use this Google font in our code */
+@import url(http://fonts.googleapis.com/css?family=Open%20Sans:300,400,500,600,700);
+
+/* 
+Normal divs will expand vertically to match their content.
+If the content of the div is floated, like header h1 and nav, the div will lose its height.
+Clearfix fixes the fix, so it retains its height even if its contents are floated.
+*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    /* Using the included font here */
+    font-family: "Open Sans";
+    padding: 40px;
+    margin: 0px;
+}
+
+#header h1 {
+    /* float makes elements float as far as possible in their parent containers */
+    float: left;
+    font-size: 20px;
+    margin: 0px;
+}
+#header nav {
+    float: right;
+    margin-top: 5px;
+}
+#header ul {
+    margin: 0px;
+    margin-top: -5px;
+}
+#header li {
+    /* No more bullet points */
+    list-style-type: none;
+    float: left;
+}
+#header li a {
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+    margin-left: 50px;
+    font-weight: 300;
+    transition: color .5s;
+}
+#header li a:hover {
+    color: lightgray;
+}
+
+/* We can apply this class to all "sections" with similar dimentions so we don't have to duplicate the CSS */
+.big-section {
+    margin-top: 50px;
+    text-align: center;
+    color: gray;
+    height: 450px;
+    display: table;
+    width: 100%;
+}
+
+#slider {
+    /* CSS file paths start from the CSS file location, not the HTML file location */
+    background-image: url(../images/slid1.jpg);
+    background-size: cover;
+    width: 100%;
+}
+#slider span {
+    /* 
+    Div elements do not support vertical align by default, but table cells do.
+    So, make the parent div "display:table;" and the child "display:table-cell;" to emulate table behavior.
+    Now, vertical-align works for the child div.
+    */
+    display: table-cell;
+    vertical-align: middle;
+}
+#slider h1 {
+    letter-spacing: 5px;
+    color: black;
+}
+
+#about {
+    background-color: lightgray;
+}
+.about-section {
+    height: 100%;
+    float: left;
+    text-align: left;
+    margin-top: 110px;
+}
+.about-section div {
+    width: 80%;
+    margin: auto;
+}
+.about-section h1 {
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: black;
+}
+.about-section h2 {
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: black;
+}
+.about-section a {
+    display: block;
+    text-decoration: none;
+    color: gray;
+    margin-bottom: 8px;
+}
+#about #about-1 {
+    width: 50%;
+}
+#about #about-2 {
+    width: 25%;
+}
+#about #about-3 {
+    width: 25%;
+}
+
+#products {
+    margin: auto;
+    margin-top: 50px;
+    width: 1410px;
+}
+#products .section {
+    width: 700px;
+    height: 500px;
+    float: left;
+    margin: 1px;
+    background-size: cover;
+    position: relative;
+}
+#products .section:hover .text {
+    /* Set the desired hover effect here, but the transition effect on the default class. */
+    opacity: 1;
+}
+#products .section:hover .overlay {
+    opacity: .9;
+}
+#products .section .text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    /* Set the desired transition effect here, but the hover effect on the hover class. */
+    transition: opacity .5s;
+    display: table;
+    text-align: center;
+}
+#products .section .text span {
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+}
+#products .section .overlay {
+    width: 100%;
+    height: 100%;
+    background: darkslategray;
+    position: absolute;
+    opacity: 0;
+    transition: opacity .5s;
+}
+#product1 {
+    background-image: url(../images/work-1.jpg);
+}
+#product2 {
+    background-image: url(../images/work-2.jpg);
+}
+#product3 {
+    background-image: url(../images/work-3.jpg);
+}
+#product4 {
+    background-image: url(../images/work-4.jpg);
+}
+#product5 {
+    background-image: url(../images/work-5.jpg);
+}
+#product6 {
+    background-image: url(../images/work-6.jpg);
+}
+
+#quotes {
+    background: darkslategrey;
+    height: 300px;
+    display: table;
+    color: white;
+}
+#quotes span {
+    display: table-cell;
+    vertical-align: middle;
+}
+#quotes h3 {
+    font-weight: 300;
+}

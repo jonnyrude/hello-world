@@ -8,8 +8,9 @@
 
 body {
     font-family: "Open Sans";
-    padding: 40px;
+    padding: 80px;
     margin: 0px;
+    text-align: center;
 }
 
 #header h1 {
@@ -58,7 +59,6 @@ body {
 }
 
 #about {
-    border: solid 1px black;
     background-image: url(../images/slid1.jpg);
     background-size: cover;
     height: 450px;
@@ -87,30 +87,59 @@ body {
 }
 
 #portfolio {
-    background-color: rgb(210, 210, 210);
-    height: 450px;
-    padding-top: 25px;
+    background-color: #f2f2f2;
+    min-height: 375px;
+    max-height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 80px;
     padding-left: 30px;
-    display: block;
 }
 
-#portfolio span {
-    padding-right: 7px;
-    float: left;
-    height: 100%;
 
+#portfolio > div {
+    padding: 7px;
 }
 
 .we-are {
-    width: 50%;
-    float: right
+    min-width: 400px;
+    max-width: 600px;
+    display: inline-block;
+    text-align: left;
+    padding: 0 10px 0 10px;
 }
 
-.brand-exp, .medi-exp {
-    width: 25%;
-    float: right;
+#portfolio .services {
+    min-width: 400px;
+    max-width: auto;
+    display:inline-block;
+    vertical-align: top;
 }
 
+.services a {
+
+    font-weight: 100;
+    text-decoration: none;
+    color: #6c7279;
+}
+
+.services a:hover {
+    color: darkslategray;
+}
+.brand-exp, .media-mktg {
+    width: 200px;
+    display: inline-block;
+    text-align: left;
+    padding: 0 10px 0 10px;
+    vertical-align: top;
+}
+#portfolio .brand-exp {
+    padding-right: 10px;
+}
+#portfolio .media-mktg {
+    padding-left: 10px;
+
+}
 #portfolio li {
    list-style-type: none;
     margin: 0;
@@ -118,48 +147,47 @@ body {
 
 #portfolio h2 {
     font-family: "Open Sans";
-    font-weight: 1;
+    font-weight: 200;
     font-size: 25px;
     letter-spacing: 1px;
 }
-
 #portfolio p, #portfolio li {
-    color: rgb(162, 162, 162);
+    color: #6c7279;
     font-size: 14px;
     line-height: 2;
     font-weight: 1;
 }
-
 .display {
-
     width: 600px;
     height: 600px;
-    margin: 4px;
+    margin: 1px;
+    text-align: center;
+    display: inline-block;
 }
-
 .disp-text {
     background-color: lightgray;
     opacity: 0;
     transition: opacity .5s;
     width: 600px;
     height: 600px;
+    display: table;
 }
-
+.disp-text span {
+    display: table-cell;
+    vertical-align: middle;
+}
 .disp-text:hover {
     opacity: .9;
 }
-
 .disp-text span {
     opacity: 0;
     transition: opacity .5s;
     color: black;
     font-size: 25px;
 }
-
 .disp-text:hover span {
     opacity: 1;
 }
-
 #disp1 {
     background-image: url("../images/work-1.jpg");
 }
@@ -182,4 +210,46 @@ body {
 
 #disp6 {
     background-image: url("../images/work-6.jpg");
+}
+
+#quote-box {
+    display: table;
+    background-color: #6c7279;
+    color: white;
+    width: 100%;
+    height: 275px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#quote-box .quote {
+    display: table-cell;
+    padding: 0 200px 0 200px;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+#quote-box .quote h5 {
+    font-weight:lighter;
+    font-size: 18px;
+}
+
+footer {
+    height: 120px;
+    width: auto;
+}
+.contact {
+    text-align: left;
+    float: left;
+    margin-right: 50px;
+}
+
+footer h6{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}
+
+footer p {
+    font-size: 13px;
+    color: #6c7279;
 }
