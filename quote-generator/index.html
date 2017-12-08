@@ -8,25 +8,32 @@
     <meta name="description" content="This is a project called Random Quote Generator from the FreeCodeCamp curriculum, completed by Jon Rude. The project
     demonstrates ability with Javascript, jQuery, and specifically Ajax requests to an API.">
 
-    <!--/* My CSS /* -->
+    <!-- My CSS  -->
     <link rel="stylesheet" href="styles/styles.css">
 
   </head>
   <body>
-    <div class="quote-box">
-      <div>
-        <p class="quote">
-          New Quote
-        </p>
-      </div>
-      <div class="button-row">
-        <button type="button" class="btn" id="quoteButton">
-          New Quote
-        </button>
-        <div class="clearfix">
-          
+    <div class="master-container">
+      <div class="quote-box">
+        <div>
+          <p class="quote">
+            New Quote
+          </p>
+        </div>
+        <div class="button-row">
+          <button type="button" class="button" id="quoteButton">
+            New Quote
+          </button>
+
+          <button type="button" class="button" id='backgroundButton'>
+            New Background
+          </button>
+
+          <div class="clearfix"></div>
         </div>
       </div>
+
+
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-2.2.4.js"
       integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="

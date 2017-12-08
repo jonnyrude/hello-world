@@ -1,5 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 html {
-    background-color: black;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+body {
+
+    background-image: url('https://source.unsplash.com/collection/190727');
+    background-size: auto cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .clearfix::after {
@@ -8,10 +19,18 @@ html {
     display: table;
 }
 
-.quote-box{
+.master-container {
 
     margin: 0 auto;
     margin-top: 12%;
+    min-width: 300px;
+    max-width: 40%;
+    height: 24em;
+    overflow: visible;
+}
+
+.quote-box{
+    margin: 0 auto;
 
     min-width: 300px;
     max-width: 40%;
@@ -19,11 +38,12 @@ html {
     min-height: 50px;
     max-height: auto;
 
-    background-color: white;
+    background-color: #EFEFF0;
 
     padding: 20px 20px 20px 20px;
 
     border-radius: 1.5em;
+    border: 2px solid black;
 }
 
 p {
@@ -31,6 +51,29 @@ p {
     font-size: 20px;
 }
 
-.btn {
-  float: right;
+p .attribution {
+    font-size: .8em;
+}
+
+.button-row {
+    margin-top: 2em;
+}
+
+.button {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: .9em;
+    color: white;
+    padding:.75em;
+    background-color: #666666;
+    border: 1px solid #777777;
+    border-radius: .5em;
+}
+
+#backgroundButton {
+    float: right;
+}
+
+#quoteButton {
+    float: left;
 }
