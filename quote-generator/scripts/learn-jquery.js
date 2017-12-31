@@ -7,39 +7,35 @@ $(document).ready(function(){
                 function(data) {
                 var onceSaid = data.shift();
                 $(".quote").html(onceSaid.content + "<p class='attribution'>— " + onceSaid.title + "</p>");
+                $('.quote-box').fadeIn(900);
                 },
         cache: false,
         });
     };
 
-    var backgroundBool = true;
-
-    var backgroundLibrary = [
-        'https://unsplash.com/photos/_zKxPsGOGKg',
-        'https://unsplash.com/photos/T6fDN60bMWY',
-        'https://unsplash.com/photos/MqEUKtGpzqA'
-        ];
-
+    var width = $(window).width();
+    var widthS= width.toString();
+    var height = $(window).height() + 400;
+    var heightS = height.toString();
+    
     function getBackground() {
-
-        if (backgroundBool === true) {
-
-            backgroundBool = false;
-            $('body').css('background-image', 'url(https://source.unsplash.com/featured/?design');
-        } else {
-            backgroundBool = true;
-            $('body').css('background-image', 'url(https://source.unsplash.com/featured/?nature');
-        }
+       
+        $('.backgroundButton').prop('disabled', true);
+        width += 1;
+        widthS = width.toString();
+        height += 1;
+        heightS = height.toString();
+        $('body').css('background-image', 'url(https://source.unsplash.com/user/jrkrelix/likes/' + widthS + 'x' + heightS + ')');
+        $('.backgroundButton').prop('disabled', false);
     };
 
     getQuote();
-
+    
     getBackground();
 
     $("#quoteButton").on('click', function(){
         $('.quote-box').fadeOut(300);
         getQuote();
-        $('.quote-box').fadeIn(900);
     });
 
     $('#backgroundButton').on('click', function(){
