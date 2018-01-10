@@ -43,7 +43,6 @@ body {
 
     border-radius: 1.5em;
     border: 2px solid black;
-
 }
 
 p {
@@ -57,6 +56,12 @@ p .attribution {
 
 .button-row {
     margin-top: 2em;
+    text-align: center;
+}
+
+.button-div {
+    margin: auto;
+    display: inline-block;
 }
 
 .button {
@@ -68,12 +73,13 @@ p .attribution {
     background-color: #666666;
     border: 1px solid #777777;
     border-radius: .5em;
+
 }
 
-#backgroundButton {
+/* #backgroundButton {
     float: right;
 }
 
 #quoteButton {
     float: left;
-}
+} */

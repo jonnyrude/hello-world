@@ -8,9 +8,14 @@ $(document).ready(function(){
                 var onceSaid = data.shift();
                 $(".quote").html(onceSaid.content + "<p class='attribution'>— " + onceSaid.title + "</p>");
                 $('.quote-box').fadeIn(900);
+
                 },
         cache: false,
         });
+        
+        var q = $('p').text();
+        $('.twitter-share-button').attr('data-text', q)
+
     };
 
     var width = $(window).width();
@@ -29,10 +34,12 @@ $(document).ready(function(){
         $('.backgroundButton').prop('disabled', false);
     };
 
+
     getQuote();
     
     getBackground();
 
+    
     $("#quoteButton").on('click', function(){
         $('.quote-box').fadeOut(300);
         getQuote();
@@ -41,5 +48,19 @@ $(document).ready(function(){
     $('#backgroundButton').on('click', function(){
         getBackground();
     });
+
+    function tweetThis() {
+        
+        var q = $('p').text();
+        var tweetUrl = 'https://www.twitter.com/share?text=';
+        tweetUrl += q.replace(' ', '%20');
+        console.log(tweetUrl);
+        var win = window.open(tweetUrl, '_blank');
+        win.focus();
+    }
+
+    $('#tweet-button').on('click', function(){
+        tweetThis();
+    })
 
 });
