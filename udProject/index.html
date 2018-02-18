@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    
+    <link rel="stylesheet" href="gridStyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content clearfix">
+        <div class="heading">
+            <h1>Pixel Art Maker</h1>
+        </div>
+        <div class="inputs">
+            <form onsubmit="event.preventDefault();makeGrid(getDimensions());return false;">  
+                <label for="gridWidth">Grid Width</label>
+                <input type="number" name="gridWidthField" id="gridWidth">
+                <label for="gridHeight">Grid Height</label>
+                <input type="number" name="gridHeightField" id="gridHeight">
+                <button>Submit</button>
+            </form>
+            <label for="colorSelector">Color: </label>
+            <input type="color" name="colorSelectorDropdown" id="colorSelector">
+        </div>
+        <div class="gridDiv">
+            <table id="grid">
+                
+            </table>
+        </div>
+    </div>
+    <script src="artGrid.js"></script>
+</body>
+</html>
