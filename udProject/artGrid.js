@@ -1,4 +1,16 @@
 
+$('document').ready(function() {
+    
+    makeGrid([10,10]);
+    setColor();
+    $('#gridWidth').focus();
+
+    $('#colorSelector').on('change', function() {
+       setColor();
+    });
+});
+
+
 function getDimensions() {
     var width = $('#gridWidth').val();
     var height = $('#gridHeight').val();
@@ -8,20 +20,30 @@ function getDimensions() {
 
 function makeGrid (dimensionsArray) {
     var canvas = $('#grid');
-    var w = dimensionsArray[0];
-    var h = dimensionsArray[1];
-    canvas.html(''); //clear canvas of any existing grid
-       
-    for (var row = 0; row < h; row++) {
+    var w = parseInt(dimensionsArray[0]);
+    var h = parseInt(dimensionsArray[1]);
+    
+    if ((w > 0 && w <= 100) && (h > 0 && h <= 40)) {
+    
+        canvas.html(''); //clear canvas of any existing grid
+        
+        for (var row = 0; row < h; row++) {
         //add row
-        canvas.append('<tr> </tr>')
-        var columns = 0;
-        while (columns < w) {
-            //add <td> elements to each row
-            canvas.children().last().append('<td></td>')
-            columns++;
+            canvas.append('<tr> </tr>')
+            var columns = 0;
+            while (columns < w) {
+                //add <td> elements to each row
+                canvas.children().last().append('<td></td>')
+                columns++;
+            }
         }
+        $('.error').css('visibility', 'hidden');
     }
+        else {
+            $('.error').css('visibility', 'visible');
+        }
+    
+
 
     function setFlag(tOrF) {
         sessionStorage.setItem('brushFlag', tOrF);
@@ -50,12 +72,3 @@ function setColor() {
     sessionStorage.setItem('brushColor', color);
 }
 
-$('document').ready(function() {
-    
-    makeGrid([10,10]);
-    setColor();
-
-    $('#colorSelector').on('change', function() {
-       setColor();
-    });
-});

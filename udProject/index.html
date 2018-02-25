@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="scripts/jquery-3.3.1.min.js"></script>
-    
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <link rel="stylesheet" href="gridStyle.css">
     <title>Document</title>
 </head>
@@ -16,14 +16,16 @@
         </div>
         <div class="inputs">
             <form onsubmit="event.preventDefault();makeGrid(getDimensions());return false;">  
-                <label for="gridWidth">Grid Width</label>
-                <input type="number" name="gridWidthField" id="gridWidth">
-                <label for="gridHeight">Grid Height</label>
-                <input type="number" name="gridHeightField" id="gridHeight">
-                <button>Submit</button>
+                <label for="gridWidth" autofocus="true">Grid Width:</label>
+                <input type="number" name="gridWidthField" id="gridWidth" value="10">
+                <label for="gridHeight">Grid Height:</label>
+                <input type="number" name="gridHeightField" id="gridHeight" value="10">
+               <input type="submit">
+
             </form>
-            <label for="colorSelector">Color: </label>
-            <input type="color" name="colorSelectorDropdown" id="colorSelector">
+            <div class="error">* Dimensions must be between 1-100 x 1-40 *</div>
+            <label for="colorSelector">Selet a Color: </label>
+            <input type="color" name="colorSelectorDropdown" id="colorSelector" value="#0000BB">
         </div>
         <div class="gridDiv">
             <table id="grid">
