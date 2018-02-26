@@ -1,51 +1,35 @@
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-
 body {
-    background-color: #FDFBEC;   
-    font-family: 'VT323', monospace;
-    font-size: 20px;
-}
-
-.content {
-    width: 700px;
+    font: 25px "VT323", monospace;
     display: inline;
     text-align: center;
 }
-.error {
-    margin: 0 auto;
-    visibility:hidden;
-    background-color: #C14242;
-    width: 400px;
-    border: 2px solid #AF3A3A;
-    border-radius: .25em;
-    margin-bottom: .75em;
-}
+
+
 h1 {
-    font-size: 90px;
+    font-family: monoton;
+    font-size: 80px;
+    margin: 30px;
 }
+
 
 form {
-    margin-bottom: .75em;
+    margin-bottom: 0.75em;
 }
 
-table{
+
+table {
     margin: 0 auto;
-    margin-top: .75em;
+    margin-top: 0.75em;
     border-collapse: collapse;
-    background-color: inherit;
 }
 
-tr{
+
+tr {
     height: 20px;
 }
+
 
 td {
     border: 1px solid black;
     width: 20px;
-         
 }

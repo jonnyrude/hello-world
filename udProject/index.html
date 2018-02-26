@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
     <script src="scripts/jquery-3.3.1.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
-    <link rel="stylesheet" href="gridStyle.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="gridstyle.css">
+    <title>Pixel Art Maker by J. Rude</title>
 </head>
-<body>
-    <div class="content clearfix">
-        <div class="heading">
-            <h1>Pixel Art Maker</h1>
-        </div>
-        <div class="inputs">
-            <form onsubmit="event.preventDefault();makeGrid(getDimensions());return false;">  
-                <label for="gridWidth" autofocus="true">Grid Width:</label>
-                <input type="number" name="gridWidthField" id="gridWidth" value="10">
-                <label for="gridHeight">Grid Height:</label>
-                <input type="number" name="gridHeightField" id="gridHeight" value="10">
-               <input type="submit">
 
-            </form>
-            <div class="error">* Dimensions must be between 1-100 x 1-40 *</div>
-            <label for="colorSelector">Selet a Color: </label>
-            <input type="color" name="colorSelectorDropdown" id="colorSelector" value="#0000BB">
-        </div>
-        <div class="gridDiv">
-            <table id="grid">
-                
-            </table>
-        </div>
-    </div>
-    <script src="artGrid.js"></script>
+<body>
+    <h1>Pixel Art Maker</h1>
+    
+    <form onsubmit="event.preventDefault();makeGrid();return false;">
+        <label for="gridWidth">Grid Width:</label>
+        <input type="number" name="gridWidthField" id="gridWidth" value="10" autofocus min="1" max="100">
+        <label for="gridHeight">Grid Height:</label>
+        <input type="number" name="gridHeightField" id="gridHeight" value="10" min="1" max="100">
+        <input type="submit">
+        <br>
+        <br>
+        <label for="colorSelector">Selet a Color: </label>
+        <input type="color" name="colorSelectorDropdown" id="colorSelector" value="#0000BB">
+    </form>
+    
+    <h3>Design Canvas</h3>
+
+    <table id="grid">
+    </table>
+
+    <script src="artgrid.js"></script>
 </body>
 </html>
