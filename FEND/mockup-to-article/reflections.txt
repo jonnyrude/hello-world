@@ -1,0 +1,25 @@
+You've learned a lot about web development so far. I want you to take a moment to write down your thoughts about web development here. Answer the following questions:
+  * What new skills have you learned?
+  * What has been easy?
+  * What has been difficult?
+  * How have you used the problem solving strategies from the first project to overcome challenges so far?
+
+---
+
+Your response goes here!
+
+  * What new skills have you learned?
+	
+	I knew most things about HTML before, so I actually learned most about Slack and the forum. I enjoyed engaging with the community the most so far.
+  
+* What has been easy?
+	
+	I thought the challenges were pretty easy, because I had experience with these elements before. I was delighted to learn how easy it was to interact with others on slack and the forum.
+  * What has been difficult?
+
+	I was a bit intimidated to start, so getting engaged was the toughest. The figure element through me a little too.
+
+  * How have you used the problem solving strategies from the first project to overcome 
+challenges so far?
+
+	I haven't run into too many problems yet, but I've really enjoyed helping others in the community with theirs.

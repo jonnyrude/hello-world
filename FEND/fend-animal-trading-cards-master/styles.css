@@ -1,0 +1,60 @@
+/* add your CSS here */
+
+ /***** Page Wide *******/
+ div {
+    margin: 0 auto;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.border {
+    border: 1px solid rgb(173, 173, 173);
+}
+
+ /***** Card *******/
+.card {
+    width: 300px;
+    box-shadow: 7px 7px 1px 1px rgba(224,224,224,1);
+    border-radius: 10px;
+    background-color: rgb(236, 236, 236);
+ }
+
+  /***** Header *******/
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 9px;
+}
+
+#main-photo {
+    box-sizing: border-box;
+    width: 300px;
+    height: 200px;
+}
+
+ /***** Fact Box *******/
+
+.facts {
+    margin-top: 9px;
+    width: 280px;
+    font-size: 13px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+}
+
+.interesting-fact {
+    font-style: italic;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+span {
+    font-weight: bold;
+}
+
+p {
+    margin: 0;
+}
